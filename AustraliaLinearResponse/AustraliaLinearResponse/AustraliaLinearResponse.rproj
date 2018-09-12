@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="RTarget" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5f9d6b6f-561d-4b3a-be29-52f263efd309}</ProjectGuid>
+    <AssemblyName>AustraliaLinearResponse</AssemblyName>
+    <Name>AustraliaLinearResponse</Name>
+    <RootNamespace>AustraliaLinearResponse</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="analyzeCrossValidate.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bootstrap.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bootstrap2.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="funcPerfMetrics.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="funcPerfMetrics_noLR.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="importData.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="analyzeData.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="loadData.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="plotFigures.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="plotSingle.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="plot3D.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="pvalues.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="twoClass.R">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Target Name="RTarget">
+    <Message Text="Executing R script" />
+  </Target>
+</Project>
